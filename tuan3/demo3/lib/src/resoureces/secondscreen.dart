@@ -29,11 +29,11 @@ class _SecondScreenState extends State<SecondScreen> {
 
   void aBC() {
     _loading = true;
-    Services.getUsers().then((users) {
-      _lsusers = users;
-      _loading = false;
-      setState(() {});
-    });
+    // Services.getUsers().then((users) {
+    //   _lsusers = users;
+    //   _loading = false;
+    //   setState(() {});
+    // });
   }
 
   @override
@@ -89,7 +89,6 @@ class _SecondScreenState extends State<SecondScreen> {
   }
 
   void goPage(Users data) {}
-
   // Post DATA
   Future<Users> postData(String username, String fullname) async {
     var response = await http.post(
@@ -110,4 +109,3 @@ class _SecondScreenState extends State<SecondScreen> {
 class Object {
   int id = 0;
 }
-

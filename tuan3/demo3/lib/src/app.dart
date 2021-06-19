@@ -1,3 +1,4 @@
+import 'package:demo3/src/home/home_ui.dart';
 import 'package:demo3/src/resoureces/mainscreen.dart';
 import 'package:flutter/material.dart';
 
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primaryColor: Colors.blue,
       ),
-      home: MainScreen(),
+      home: HomeUI(),
     );
   }
 }
